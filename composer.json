@@ -1,0 +1,20 @@
+{
+	"name": "paysbuy/payapi-php",
+	"description": "PHP library for the Paysbuy payment API",
+	"keywords": ["paysbuy", "payment", "debitcard", "creditcard", "api"],
+	"homepage": "https://github.com/paysbuy/payapi-php",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Paysbuy",
+			"email": "support@paysbuy.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2"
+	},
+	"autoload": {
+		"classmap": ["lib/payapi/"]
+	}	
+}
