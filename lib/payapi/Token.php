@@ -35,9 +35,19 @@ class Token extends VaultResource {
 	 */
 	public static function create($attrs, $publicKey = null, $secretKey = null) {
 
-		// ** IMPORTANT **************************************************************************
-		// * You probably shouldn't be using this on a live server unless you are PCI compliant! *
-		// ***************************************************************************************
+		/* EXTREMELY IMPORTANT **************************************************************************
+		*                                                                                               *
+		*  You probably shouldn't be using this on a live server unless your company/organisation       *
+		*  is PCI compliant! If you need to use our tokenisation service on your site, you should       *
+		*  almost certainly be using our JS library:                                                    *
+		*                                                                                               *
+		*    https://github.com/paysbuy/paysbuy.js                                                      *
+		*                                                                                               *
+		*  Using this, all sensitive data will be sent from the client directly to PAYSBUY's secure,    *
+		*  PCI compliant servers for tokenisation - removing any potential risk of you handling         *
+		*  sensitive customer payment information (credit card details etc.) on your servers            *
+		*                                                                                               *
+		************************************************************************************************/
 
 		return parent::_create(get_class(), self::getUrl(), $attrs, $publicKey, $secretKey);
 
