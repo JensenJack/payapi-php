@@ -9,6 +9,5 @@ return array(
     'PaysbuyPayAPI\\ApiResource' => $baseDir . '/lib/payapi/resource/APIResource.php',
     'PaysbuyPayAPI\\Object' => $baseDir . '/lib/payapi/resource/object/Object.php',
     'PaysbuyPayAPI\\Payment' => $baseDir . '/lib/payapi/Payment.php',
-    'PaysbuyPayAPI\\Token' => $baseDir . '/lib/payapi/Token.php',
     'PaysbuyPayAPI\\VaultResource' => $baseDir . '/lib/payapi/resource/VaultResource.php',
 );
